@@ -1,9 +1,16 @@
+:root {
+  --above-fold-color: #e7eeef;
+}
+
+html {
+  font-size: 16px;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Bebas Neue", cursive !important;
 }
 
 a {
@@ -13,4 +20,149 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* Above The Fold */
+.above-fold {
+  background-color: var(--above-fold-color);
+  min-height: 100vh;
+  padding-bottom: 3.75rem;
+}
+
+/* Navbar */
+.above-fold .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.above-fold .navbar-brand-text {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-left: 1.063rem;
+  background-image: linear-gradient(45deg, #438181, #326060);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.navbar {
+  padding-top: 1.875rem !important;
+  padding-bottom: 1.875rem !important;
+}
+.navbar-nav {
+  align-items: center;
+}
+.navbar-nav a {
+  font-family: "Montserrat", sans-serif !important;
+  background: linear-gradient(47.03deg, #438181 7.38%, #326060 97.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  opacity: 0.8;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+.navbar-nav a:nth-child(3){
+  margin-right: 1.875rem;
+}
+.navbar-nav .contact-link {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 28px !important;
+  background: linear-gradient(47.03deg, #438181 7.38%, #326060 97.34%);
+  box-shadow: 0px 8px 23px rgba(65, 132, 247, 0.24);
+  border-radius: 100px;
+  -webkit-text-fill-color: white !important;
+}
+
+/* Copy Text Section */
+.copy-text-content {
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy-text-content h1 {
+  font-weight: 900;
+  font-size: 1.875rem;
+  display: flex;
+  align-items: center;
+
+  background: linear-gradient(47.03deg, #438181 7.38%, #326060 97.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+.copy-text-content p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 24px;
+
+  color: #6c87ae;
+}
+.above-fold .row {
+  margin-top: 3rem;
+}
+
+.codnify-logo-container {
+  height: 500px;
+}
+.phone > span {
+  overflow: inherit !important;
+}
+.phone img {
+  left: 62px !important;
+  /* bottom: 509px !important; */
+  width: inherit !important;
+  height: inherit !important;
+}
+.down-arrow-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.938rem;
+  margin-top: 3.938rem;
+}
+
+/* Parners */
+.partners div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partners h2 {
+  font-family: 'Poppins';
+font-weight: 600;
+font-size: 2rem;
+line-height: 48px;
+
+text-align: center;
+
+color: #031432;
+
+opacity: 0.8;
+margin-bottom: 2.086rem;
+}
+/* .partners img {
+  margin-right: 2.25rem !important;
+} */
+.partners span {
+  width: -webkit-fill-available !important;
+}
+
+@media screen and (min-width:1200px) {
+  .phone img {
+    left: 110px !important;
+  }
 }
