@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const withPlugins = require("next-compose-plugins");
-const withImages = require("next-images");
+// const withImages = require("next-images");
 const webpack = require("webpack");
 
 const nextConfig = {
@@ -9,7 +9,7 @@ const nextConfig = {
 
 
 
-module.exports = withPlugins([withImages], {
+module.exports = withPlugins({
     webpack: (config) => {
       config.node = {
         fs: "empty",

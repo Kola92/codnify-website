@@ -20,7 +20,8 @@
     "react-dom": "18.0.0",
     "react-owl-carousel": "^2.3.3",
     "react-slick": "^0.28.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "webpack": "^5.72.0"
   },
   "devDependencies": {
     "eslint": "8.12.0",
