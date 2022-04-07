@@ -16,13 +16,14 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>{Component.title}</title>
         <meta name="description" content={Component.description} />
-        {/* jQuery */}
-        <Script
+        
+      </Head>
+      {/* jQuery */}
+      <Script
           src="https://code.jquery.com/jquery-3.6.0.min.js"
           integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
           crossOrigin="anonymous"
         ></Script>
-      </Head>
       <Component {...pageProps} />;
     </>
   );
