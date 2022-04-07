@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import Script from 'next/script'
+
 
 export default function Document() {
   return (
@@ -40,13 +40,6 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
           rel="stylesheet"
         />
-
-        {/* jQuery */}
-        <Script
-          src="https://code.jquery.com/jquery-3.6.0.min.js"
-          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-          crossOrigin="anonymous"
-        ></Script>
 
         {/* Bootstrap Icons */}
         <link
