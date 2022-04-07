@@ -5,6 +5,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import Navbar from "../components/Navbar";
 import Partners from "../components/Partners";
 import About from "../components/About";
+import Services from "../components/Services";
+import Projects from "../components/Projects/Projects";
+import Testimonials from "../components/Testimonials/Testimonials";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const styling = {
@@ -29,8 +34,6 @@ export default function Home() {
         <title>Codnify</title>
         <meta name="description" content="Codnify" />
         <link rel="icon" href="/images/logo.png" />
-
-        
       </Head>
 
       <div className="above-fold">
@@ -80,14 +83,28 @@ export default function Home() {
 
       <main className={styles.main}>
         <Container>
-          <Row>
+          <Row className="about-section">
             <About />
           </Row>
-          <Row>
-            
+          <Row className="services-section">
+            <Services />
+          </Row>
+          <Row className="projects-section">
+            <Projects />
+          </Row>
+          <Row className="testimonials-section">
+            <Testimonials />
+          </Row>
+          <Row className="contact-section">
+            <Contact />
           </Row>
         </Container>
       </main>
+      <div className="footer-container">
+        <Container>
+          <Footer />
+        </Container>
+      </div>
     </div>
   );
 }
