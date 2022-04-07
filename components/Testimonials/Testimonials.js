@@ -86,7 +86,7 @@ const Testimonials = () => {
           <div key={testimonial.id}>
             <div className="testimonial-container">
               <div className="image-with-clientdetails">
-                <Image src={testimonial.picture} height={300} width={300} />
+                <Image src={testimonial.picture} height={300} width={300} alt="Client Picture" />
                 <div className="testimonial-feedback">
                   <h4>{testimonial.feedbackHeading}</h4>
                   <h5>{testimonial.feedback}</h5>

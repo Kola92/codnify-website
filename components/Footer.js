@@ -34,6 +34,7 @@ const Footer = () => {
                       src="/images/footer/youtube.svg"
                       height={32}
                       width={32}
+                      alt="Youtube Icon"
                     />
                   </a>
                 </Link>
@@ -45,6 +46,7 @@ const Footer = () => {
                       src="/images/footer/facebook.svg"
                       height={32}
                       width={32}
+                      alt="Facebook Icon"
                     />
                   </a>
                 </Link>
@@ -56,6 +58,7 @@ const Footer = () => {
                       src="/images/footer/whatsapp.svg"
                       height={32}
                       width={32}
+                      alt="Whatsapp Icon"
                     />
                   </a>
                 </Link>

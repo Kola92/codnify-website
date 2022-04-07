@@ -52,15 +52,16 @@ const Projects = () => {
           >
             {projectItems.map((projectItem) => {
               return (
-                <div class="item" key={projectItem.id}>
-                  <div class="shadow-effect">
+                <div className="item" key={projectItem.id}>
+                  <div className="shadow-effect">
                     <Link href={projectItem.url}>
                       <a>
                         <Image
-                          class="img-circle"
+                          className="img-circle"
                           src={projectItem.img}
                           height={500}
                           width={500}
+                          alt="Project Item"
                         />
                       </a>
                     </Link>

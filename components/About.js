@@ -6,10 +6,11 @@ export const aboutCards = [
   {
     id: 1,
     source: "/images/about-us/solutions-released-icon.svg",
-    title:"80+ Solutions Released"
+    title:"80+ Solutions Released",
+    alt:"Solutions Icon"
   },
-  { id: 2, source: "/images/about-us/in-house.svg", title:"10+ In-house Professionals" },
-  { id: 3, source: "/images/about-us/yearsofexperience-icon.svg", title:"5+ Years of Experience" },
+  { id: 2, source: "/images/about-us/in-house.svg", title:"10+ In-house Professionals", alt:"In house professionals icon" },
+  { id: 3, source: "/images/about-us/yearsofexperience-icon.svg", title:"5+ Years of Experience", alt:"Years of Experience icon" },
 ];
 
 const {Body, Title} = Card;
@@ -29,7 +30,7 @@ const About = () => {
           <Col key={card.id}>
             <Card>
               <Body>
-                <Image src={card.source} height={80} width={80} />
+                <Image src={card.source} alt={card.alt} height={80} width={80} />
                 <Title>{card.title}</Title>
               </Body>
             </Card> 

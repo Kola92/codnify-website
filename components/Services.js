@@ -23,14 +23,14 @@ const Services = () => {
         {services.map(service => (
           <div key={service.id} className="services-list">
             <span>
-              <Image src={imgSource} height={25} width={25} />
+              <Image src={imgSource} height={25} width={25} alt="" />
             </span>
             <span>{service.text}</span>
           </div>
         ))}
       </Col>
       <Col>
-          <Image src="/images/services/rounded-services.png" height={444} width={444} />
+          <Image src="/images/services/rounded-services.png" height={444} width={444} alt="Software Development Services" />
       </Col>
     </Row>
     </>
