@@ -488,6 +488,9 @@ a {
 }
 .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
   color: white !important;
+  font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1rem;
 }
 .css-1480iag-MuiInputBase-root-MuiInput-root:before {
   border-bottom: 1px solid white !important;
