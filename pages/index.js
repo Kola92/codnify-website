@@ -11,6 +11,9 @@ import Testimonials from "../components/Testimonials/Testimonials";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
+Home.title = "Codnify | Home"
+Home.description = "Codnify Homepage"
+
 export default function Home() {
   const styling = {
     backgroundImage: "url('/images/codnify-logo-behind-phone.png')",
@@ -31,8 +34,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Codnify</title>
-        <meta name="description" content="Codnify" />
+        {/* <title>Codnify</title> */}
+        {/* <meta name="description" content="Codnify" /> */}
         <link rel="icon" href="/images/logo.png" />
       </Head>
 

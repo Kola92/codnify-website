@@ -3,19 +3,13 @@ const withPlugins = require("next-compose-plugins");
 const withImages = require("next-images");
 const webpack = require("webpack");
 
-// const nextConfig = {
-//   reactStrictMode: true,
-//   config.plugins.push(
-//           new webpack.ProvidePlugin({
-//             $: "jquery",
-//             jQuery: "jquery",
-//             "window.jQuery": "jquery",
-//           })
-//         );
-//         return config;
-// }
+const nextConfig = {
+  reactStrictMode: true
+}
 
-const nextConfig = withPlugins([withImages], {
+
+
+module.exports = withPlugins([withImages], {
     webpack: (config) => {
       config.node = {
         fs: "empty",
@@ -35,7 +29,7 @@ const nextConfig = withPlugins([withImages], {
       );
       return config;
     },
-  });
+  }, nextConfig);
 
 
 
@@ -64,4 +58,4 @@ const nextConfig = withPlugins([withImages], {
 //   },
 // });
 
-module.exports = nextConfig
+// module.exports = nextConfig
