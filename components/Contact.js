@@ -19,7 +19,6 @@ const Contact = () => {
               label="Full Name"
               type="text"
               variant="standard"
-              style={{color:"white"}}
             />
           </Col>
           <Col>

@@ -23,6 +23,12 @@ a {
   box-sizing: border-box;
 }
 
+/******
+
+1. HOME PAGE
+
+******/
+
 /* Above The Fold */
 .above-fold {
   background-color: var(--above-fold-color);
@@ -488,9 +494,9 @@ a {
 }
 .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
   color: white !important;
-  font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 1rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1rem;
 }
 .css-1480iag-MuiInputBase-root-MuiInput-root:before {
   border-bottom: 1px solid white !important;
@@ -525,20 +531,20 @@ a {
 }
 .footer-logo span:nth-child(2) {
   font-weight: 400;
-font-size: 2rem;
-line-height: 38px;
-display: flex;
-align-items: center;
-margin-left: 1rem;
+  font-size: 2rem;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
 }
 .address p {
-  font-family: 'Montserrat';
-font-style: italic;
-font-weight: 300;
-font-size: 1rem;
-line-height: 20px;
-margin-top: 1.688rem;
-margin-bottom: 1.667rem;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 20px;
+  margin-top: 1.688rem;
+  margin-bottom: 1.667rem;
 }
 .social-media ul {
   display: flex;
@@ -549,31 +555,39 @@ margin-bottom: 1.667rem;
   margin-right: 2.167rem;
 }
 .footer-container .row:first-child {
-  border-bottom: 1px solid rgba(255, 255, 255, .6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 .footer-container h3 {
   margin-bottom: 1.5rem;
-font-weight: 600;
-font-size: 1.15rem;
-line-height: 24px;
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 24px;
 }
-.company-info, .services-footer, .contact-footer {
-  font-family: 'Montserrat';
+.company-info,
+.services-footer,
+.contact-footer {
+  font-family: "Montserrat";
 }
-.contact-footer-links ul, .services-footer-links ul, .company-info-links ul {
+.contact-footer-links ul,
+.services-footer-links ul,
+.company-info-links ul {
   list-style: none;
   padding-left: 0 !important;
 }
-.contact-footer-links li, .services-footer-links li, .company-info-links li {
+.contact-footer-links li,
+.services-footer-links li,
+.company-info-links li {
   margin-bottom: 1rem;
 }
-.contact-footer-links a, .services-footer-links a, .company-info-links a {
+.contact-footer-links a,
+.services-footer-links a,
+.company-info-links a {
   font-weight: 400;
   font-size: 1rem;
   line-height: 20px;
- display: flex;
+  display: flex;
   align-items: center;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
   opacity: 0.8;
   text-decoration: none;
   width: max-content;
@@ -585,13 +599,13 @@ line-height: 24px;
 .copy-right p {
   text-align: center;
   font-weight: 600;
-font-size: 1rem;
-line-height: 20px;
-color: #FFFFFF;
-opacity: 0.8;
-display:flex;
-justify-content: center;
-align-items:center;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -610,3 +624,252 @@ align-items:center;
     width: 429.32px;
   }
 }
+
+/******
+
+2. ABOUT US PAGE
+
+******/
+.about-copy-text h1 {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 59px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background: linear-gradient(47.03deg, #438181 7.38%, #326060 97.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-top: 4.063rem;
+}
+.about-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  font-family: Montserrat;
+}
+.about-page-container h3 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  background: linear-gradient(47.03deg, #438181 7.38%, #326060 97.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 2.063rem;
+}
+.about-page-container p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 24px;
+  text-align: justify;
+
+  color: var(--text-color);
+}
+.about-header .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.about-header .navbar-brand-text {
+  margin-left: 1rem;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 38px;
+  background: linear-gradient(47.03deg, #438181 7.38%, #326060 97.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Team Members */
+.team-members-tabs {
+  display: grid !important;
+  grid-template-columns: 164px 1fr;
+  column-gap: 3.563rem;
+}
+.team-members-tabs .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.team-members-tabs .card-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 20px 4px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+.card-column {
+  background: #ffffff;
+  box-shadow: 0px 24px 32px -3px rgba(67, 129, 129, 0.15);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-column img {
+  border-radius: 50%;
+}
+.card-column .ant-card-body {
+  width: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.founder-details h4 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 9px;
+  margin-bottom: 0;
+  background: linear-gradient(47.03deg, #438181 7.38%, #326060 97.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.founder-details h5 {
+  font-weight: 600;
+  font-size: 1.05rem;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+.about-team-section {
+  margin-top: 5rem !important;
+  margin-bottom: 1.563rem;
+}
+.about-team-section h3 {
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 59px;
+  text-align: center;
+  background: linear-gradient(47.03deg, #438181 7.38%, #326060 97.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.about-team-section p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 24px;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 4.188rem;
+}
+.ant-tabs-tab {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #326060;
+  margin-bottom: 10px;
+}
+.ant-tabs-nav-list .ant-tabs-tab:last-child {
+  margin-bottom: 0;
+}
+.ant-tabs-tab-btn {
+  font-weight: 600;
+  background: linear-gradient(47.03deg, #438181 7.38%, #326060 97.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.ant-tabs-tab-active {
+  background: linear-gradient(47.03deg, #438181 7.38%, #326060 97.34%);
+}
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  -webkit-text-fill-color: white !important;
+}
+.ant-tabs-tab:hover {
+  cursor: pointer;
+}
+.ant-tabs-tab-btn span {
+  display: flex;
+  align-items: center;
+}
+.ant-tabs-tab .anticon {
+  color: #326060;
+  margin-right: 5px;
+}
+.ant-tabs-tab-active svg {
+  filter: brightness(9.5);
+}
+
+/* Location Section */
+.about-location-section {
+  height: 100vh;
+  margin-bottom: 6.875rem;
+  margin-top: 9.063rem !important;
+}
+.about-location-section h3 {
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 59px;
+  background: linear-gradient(47.03deg, #438181 7.38%, #326060 97.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+}
+.about-location-section p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 24px;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 4.188rem;
+}
+
+.world-map-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.address-card {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+  width: 450px;
+  height: 300px;
+  border: 5px solid #326060;
+  padding: 25px 45px;
+}
+.address-card:first-of-type {
+  margin-right: 1rem;
+}
+.address-card p {
+  text-align: initial;
+}
+.address-card h4 {
+  font-weight: 700;
+  font-size: 1.563rem;
+  line-height: 44px;
+  color: #333333;
+}
+
+
+
+/******
+
+3. SERVICES PAGE
+
+******/
