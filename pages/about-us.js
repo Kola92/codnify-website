@@ -108,7 +108,7 @@ export default function AboutUs() {
                 <TabPane
                   tab={
                     <span>
-                      <UserOutlined style={{ color: "white" }} />
+                      <UserOutlined />
                       Founders
                     </span>
                   }
