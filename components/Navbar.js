@@ -22,7 +22,7 @@ const NavigationBar = () => {
         <Toggle />
         <Collapse className="justify-content-end">
           <Nav>
-            <Link href="/about">
+            <Link href="/about-us">
               <a className="nav-link">About Us</a>
             </Link>
             <Link href="/services">
