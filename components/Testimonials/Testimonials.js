@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import { Rate } from 'antd';
+import 'antd/dist/antd.css';
 
 const PreviousBtn = (props) => {
   const { className, onClick } = props;
