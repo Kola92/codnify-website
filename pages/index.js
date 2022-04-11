@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { Container, Row, Col } from "react-bootstrap";
+
 import Navbar from "../components/Navbar";
 import Partners from "../components/Partners";
 import About from "../components/About";
@@ -11,7 +12,7 @@ import Testimonials from "../components/Testimonials/Testimonials";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
-Home.title = "Codnify | Home"
+Home.title = "Home | Codnify "
 Home.description = "Codnify Homepage"
 
 export default function Home() {
@@ -32,10 +33,8 @@ export default function Home() {
   };
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        {/* <title>Codnify</title> */}
-        {/* <meta name="description" content="Codnify" /> */}
         <link rel="icon" href="/images/logo.png" />
       </Head>
 

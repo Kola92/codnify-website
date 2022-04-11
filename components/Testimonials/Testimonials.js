@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
-import { Col, Row } from "react-bootstrap";
+import { Rate } from 'antd';
 
 const PreviousBtn = (props) => {
   const { className, onClick } = props;
@@ -46,15 +46,16 @@ const NextBtn = (props) => {
 };
 
 const testimonials = [
-  {
-    id: 1,
-    picture: "/images/testimonials/alex.png",
-    name: "Alexandria Gallagher",
-    role: "CTO, DevGenius",
-    feedbackHeading: "Amazing customer service and delivery",
-    feedback:
-      "The team at Codnify deliver quality results through a collaborative process, taking an active role in feedback cycles. They are fast, flexible, communicative, and always striving to do everything necessary to help the customer.",
-  },
+  // {
+  //   id: 1,
+  //   picture: "/images/testimonials/alex.jpg",
+  //   name: "Alexandria Gallagher",
+  //   role: "CTO, DevGenius",
+  //   feedbackHeading: "Amazing customer service and delivery",
+  //   feedback:
+  //     "The team at Codnify deliver quality results through a collaborative process, taking an active role in feedback cycles. They are fast, flexible, communicative, and always striving to do everything necessary to help the customer.",
+  //   rating:5,
+  // },
   {
     id: 2,
     picture: "/images/testimonials/john.jpg",
@@ -63,7 +64,17 @@ const testimonials = [
     feedbackHeading: "Super Confident",
     feedback:
       "If you want to lay the best foundation possible I'd recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer.",
+    rating:4.5,
   },
+  {
+    id:3,
+    picture: "/images/testimonials/tanya.jpg",
+    name: "Carley Sinclair",
+    role: "Senior Software Engineer",
+    feedbackHeading: "Top Quality Service",
+    feedback:"Website development is the real deal! I was amazed at the quality of website development. I wish I would have thought of it first. Website development was the best investment I ever made.",
+    rating:3.5,
+  }
 ];
 
 const Testimonials = () => {
@@ -90,13 +101,22 @@ const Testimonials = () => {
                 <div className="testimonial-feedback">
                   <h4>{testimonial.feedbackHeading}</h4>
                   <h5>{testimonial.feedback}</h5>
+                  <div className="ratings-container">
+                  <div className="ratings">
+                    <div>
+                      <h5>Ratings</h5>
+                    </div>
+                    <Rate allowHalf disabled defaultValue={testimonial.rating} />
+                  </div>
+                  </div>
+                  
                 </div>
               </div>
 
-              {/* <div className="client-details">
+              <div className="client-details">
                 <h4>{testimonial.name}</h4>
                 <h5>{testimonial.role}</h5>
-              </div> */}
+              </div>
             </div>
             {/* <Col>
                 

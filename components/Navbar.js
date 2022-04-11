@@ -10,14 +10,17 @@ const NavigationBar = () => {
     <Navbar expand="lg">
       <Container>
         <Brand>
-          <Image
-            // loader={myLoader}
-            src="/images/logo.png"
-            alt="Codnify Logo"
-            width={60}
-            height={60}
-          />
-          <span className="navbar-brand-text">Codnify</span>
+          <Link href="/">
+            <a>
+              <Image
+                src="/images/logo.png"
+                alt="Codnify Logo"
+                width={60}
+                height={60}
+              />
+              <span className="navbar-brand-text">Codnify</span>
+            </a>
+          </Link>
         </Brand>
         <Toggle />
         <Collapse className="justify-content-end">
@@ -32,9 +35,7 @@ const NavigationBar = () => {
               <a className="nav-link">Projects</a>
             </Link>
             <Link href="contact">
-              <a className="nav-link contact-link">
-                Contact Us
-              </a>
+              <a className="nav-link contact-link">Contact Us</a>
             </Link>
           </Nav>
         </Collapse>
