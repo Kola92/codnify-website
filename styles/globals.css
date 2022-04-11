@@ -801,14 +801,14 @@ color: #031432;
   margin-bottom: 4.188rem;
 }
 .ant-tabs-tab {
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 10px;
-  border: 2px solid #326060;
-  margin-bottom: 10px;
+  height: 45px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  border-radius: 10px !important;
+  border: 2px solid #326060 !important;
+  margin-bottom: 10px !important;
 }
 .ant-tabs-nav-list .ant-tabs-tab:last-child {
   margin-bottom: 0;
@@ -822,7 +822,7 @@ color: #031432;
   text-fill-color: transparent;
 }
 .ant-tabs-tab-active {
-  background: linear-gradient(47.03deg, #438181 7.38%, #326060 97.34%);
+  background: linear-gradient(47.03deg, #438181 7.38%, #326060 97.34%) !important;
 }
 .ant-tabs-tab-active .ant-tabs-tab-btn {
   -webkit-text-fill-color: white !important;

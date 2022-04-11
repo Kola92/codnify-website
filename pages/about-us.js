@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/About.module.css";
+import 'antd/dist/antd.css';
 
 import { Container, Row, Col } from "react-bootstrap";
 import { Tabs, Card } from "antd";
