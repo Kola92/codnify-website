@@ -1100,6 +1100,12 @@ img {
     flex: 100% 1;
     max-width: 95% !important;
   }
+  .about-section .col {
+    padding-right: 0 !important;
+}
+.about-section .row {
+  padding-right: 0 !important;
+}
 }
 @media screen and (max-width: 500px) {
   .phone img {
