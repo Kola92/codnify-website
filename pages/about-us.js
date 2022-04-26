@@ -45,12 +45,12 @@ export default function AboutUs() {
   };
 
   return (
-    <div className={styles.container}>
+    <div style={{height:'100vh'}} className={styles.container}>
       <Head>
         <link rel="icon" href="/images/logo.png" />
       </Head>
 
-      <div className={styles.aboutUsAboveFold} style={aboveFoldStyling}>
+      <div className="aboutUsAboveFold" style={aboveFoldStyling}>
         <header className="about-header">
           <Navbar />
         </header>

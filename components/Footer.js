@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer>
       <Row>
-        <Col xs={4}>
+        <Col xs={12} md={4}>
           <div className="footer-logo">
             <span>
               <Image
@@ -66,7 +66,7 @@ const Footer = () => {
             </ul>
           </div>
         </Col>
-        <Col xs="2">
+        <Col xs={12} md={2}>
           <div className="company-info">
             <h3>Company Info</h3>
             <div className="company-info-links">
@@ -95,7 +95,8 @@ const Footer = () => {
             </div>
           </div>
         </Col>
-        <Col xs="2">
+
+        <Col xs={12} md={2}>
           <div className="services-footer">
             <h3>Services</h3>
             <div className="services-footer-links">
@@ -124,7 +125,8 @@ const Footer = () => {
             </div>
           </div>
         </Col>
-        <Col xs="2">
+
+        <Col xs={12} md={2}>
           <div className="contact-footer">
             <h3>Contact Us</h3>
             <div className="contact-footer-links">

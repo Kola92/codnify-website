@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
+      
         {/* Bebas Neue Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

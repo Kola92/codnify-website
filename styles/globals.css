@@ -14,6 +14,10 @@ body {
   margin: 0;
   font-family: "Bebas Neue" !important;
 }
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -43,6 +47,9 @@ header .navbar-brand a {
 }
 
 /* Navbar */
+.navbar-toggler.collapsed {
+  border: none !important;
+}
 .above-fold .navbar-brand {
   display: flex;
   align-items: center;
@@ -131,11 +138,14 @@ header .navbar-brand a {
 .codnify-logo-container {
   height: 500px;
 }
+.phone {
+  position: relative;
+}
 .phone > span {
   overflow: inherit !important;
 }
 .phone img {
-  left: 62px !important;
+  left: 23px !important;
   /* bottom: 509px !important; */
   width: inherit !important;
   height: inherit !important;
@@ -175,6 +185,11 @@ header .navbar-brand a {
 }
 
 /* About Section */
+.aboutUsAboveFold {
+  height: 500px !important;
+  padding-bottom: 3.75rem;
+}
+
 .about-section h3 {
   font-weight: 900;
   font-size: 3rem;
@@ -436,20 +451,36 @@ header .navbar-brand a {
   align-items: center;
   justify-content: center;
   position: absolute;
-    top: 5.8rem;
-    left: 15rem;
+  top: 5.8rem;
+  left: 15rem;
 }
 .ratings h5 {
   margin-bottom: 0 !important;
   font-weight: 600;
-font-size: 16px;
-line-height: 24px;
-color: #031432;
+  font-size: 16px;
+  line-height: 24px;
+  color: #031432;
 }
 .ratings > div {
-  margin-right:1rem;
+  margin-right: 1rem;
 }
 .client-details {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 192px;
+  justify-content: center;
+  height: 52px;
+  text-align: center;
+  left: 34rem;
+  top: 13.2rem;
+  background: #ffffff;
+  box-shadow: 0px 12px 32px rgba(63, 128, 240, 0.08);
+  border-radius: 8px; */
+  position: relative;
+}
+.client__details-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -519,14 +550,17 @@ color: #031432;
 .css-1480iag-MuiInputBase-root-MuiInput-root:after {
   color: white !important;
 }
-.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
+.input-text-field label {
   color: white !important;
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 1rem;
 }
-.css-1480iag-MuiInputBase-root-MuiInput-root:before {
-  border-bottom: 1px solid white !important;
+.input-text-field input {
+  border-bottom: 2px solid white !important;
+}
+.input-text-field .css-1480iag-MuiInputBase-root-MuiInput-root:after {
+  border-bottom: 2px solid white !important;
 }
 .submit-button {
   margin-top: 2.563rem;
@@ -657,6 +691,7 @@ color: #031432;
 2. ABOUT US PAGE
 
 ******/
+
 .about-copy-text h1 {
   font-family: "Montserrat";
   font-weight: 900;
@@ -672,7 +707,7 @@ color: #031432;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  margin-top: 4.063rem;
+  margin-top: 6.063rem;
 }
 .about-page-container {
   display: flex;
@@ -683,7 +718,7 @@ color: #031432;
 }
 .about-page-container h3 {
   font-weight: 900;
-  font-size: 48px;
+  font-size: 2.5rem;
   line-height: 59px;
   text-align: center;
   background: linear-gradient(47.03deg, #438181 7.38%, #326060 97.34%);
@@ -822,7 +857,11 @@ color: #031432;
   text-fill-color: transparent;
 }
 .ant-tabs-tab-active {
-  background: linear-gradient(47.03deg, #438181 7.38%, #326060 97.34%) !important;
+  background: linear-gradient(
+    47.03deg,
+    #438181 7.38%,
+    #326060 97.34%
+  ) !important;
 }
 .ant-tabs-tab-active .ant-tabs-tab-btn {
   -webkit-text-fill-color: white !important;
@@ -899,6 +938,10 @@ color: #031432;
 3. SERVICES PAGE
 
 ******/
+.servicesAboveFold {
+  height: 500px !important;
+  padding-bottom: 3.75rem;
+}
 
 /* Alternating Two Column Layout */
 .layout {
@@ -915,8 +958,8 @@ color: #031432;
   flex-direction: row-reverse;
 }
 .layout__item {
-  padding-top: 1em;
-  padding-left: 3.5em;
+  padding-top: 1em !important;
+  padding-left: 3.5em !important;
   /* display: flex;
   flex-direction: column;
   align-items: center; */
@@ -930,7 +973,7 @@ color: #031432;
 }
 .layout__item--figure img {
   background: linear-gradient(47.03deg, #438181 7.38%, #326060 97.34%);
-border-radius: 20px;
+  border-radius: 20px;
 }
 img {
   max-width: 100%;
@@ -949,13 +992,13 @@ img {
 }
 .layout__item h2 {
   font-weight: 900;
-font-size: 2rem;
-line-height: 59px;
-background: linear-gradient(47.03deg, #438181 7.38%, #326060 97.34%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+  font-size: 2rem;
+  line-height: 59px;
+  background: linear-gradient(47.03deg, #438181 7.38%, #326060 97.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .layout__item ul {
@@ -964,10 +1007,246 @@ text-fill-color: transparent;
   margin-top: 2.5rem;
 }
 
-.layout__item-1, .layout__item-3 {
+.layout__item-1,
+.layout__item-3 {
   padding-left: 9rem;
 }
 .layout__item ul li {
   color: #333;
   font-weight: 600;
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .container {
+    max-width: 800px !important;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px !important;
+    padding: 0 20px !important;
+  }
+  .above-fold .above-fold-row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .phone img {
+    left: 170px !important;
+  }
+  .codnify-logo-container {
+    margin-bottom: 2.063rem !important;
+  }
+  .above-fold-row > div {
+    background-size: cover !important;
+  }
+  .partners span:not(.partners span:last-of-type) {
+    margin-right: 15px !important;
+  }
+  .about-section .col {
+    margin-bottom: 20px !important;
+  }
+  .services-section h3 {
+    justify-content: center;
+  }
+  .services-section .col:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  .services-list {
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  .slick-slider {
+    height: 100% !important;
+  }
+  .section-services.container {
+    max-width: 960px !important;
+  }
+  .layout__item-1, .layout__item-3 {
+    padding-left: 0 !important;
+}
+.layout {
+  flex-direction: column;
+  align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.layout:nth-child(even) {
+  flex-direction: column !important;
+}
+.layout__item--figure {
+  margin-right: 0 !important;
+}
+}
+@media screen and (max-width: 740px) {
+  .phone img {
+    left: 149px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 600px !important;
+  }
+  .phone img {
+    left: 85px !important;
+  }
+  .team-members-tabs .row {
+    flex-direction: column;
+  }
+  .team-members-tabs .card-column {
+    flex: 100% 1;
+    max-width: 95% !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .phone img {
+    left: 29px !important;
+  }
+}
+@media screen and (max-width: 420px) {
+  .container {
+    max-width: 600px !important;
+  }
+  .phone img {
+    left: 0 !important;
+  }
+}
+@media screen and (min-width: 421px) and (max-width: 479px) {
+  .phone img {
+    left: 31px !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .aboutUsAboveFold {
+    border-radius: 0 !important;
+  }
+  .services-section .row {
+    flex-direction: column;
+  }
+  .servicesAboveFold {
+    border-radius: 0 !important;
+  }
+  .projects-section h3 {
+    justify-content: center;
+  }
+  .image-with-clientdetails {
+    gap: 2rem;
+    display: grid;
+    height: 100%;
+    grid-template-rows: auto auto;
+    width: 100%;
+    grid-template-columns: none;
+  }
+  .testimonial-feedback {
+    width: 100%;
+  }
+  .slick-prev,
+  .slick-next {
+    top: 78% !important;
+    transform: translate(151%, -33%) !important;
+  }
+  .testimonials-section h3 {
+    justify-content: center !important;
+  }
+  .ratings-container {
+    height: 140px !important;
+  }
+  .ratings {
+    justify-content: space-between;
+    width: fit-content;
+    left: 100px;
+  }
+  .client__details-inner {
+    left: 101px;
+    top: -453px;
+  }
+  .testimonial-container {
+    flex-direction: column;
+}
+  .contact-section > section {
+    padding: 15px;
+  }
+  .input-field-row .row {
+    flex-direction: column;
+  }
+  .contact-section h4 {
+    font-size: 2rem;
+  }
+  footer > .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-logo {
+    justify-content: center;
+  }
+  .address {
+    display: flex;
+    justify-content: center;
+  }
+  .social-media ul {
+    justify-content: center;
+  }
+  .company-info-links,
+  .services-footer-links,
+  .contact-footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .client-details {
+    position: relative;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+  }
+  .about-location-section {
+    height: 100% !important;
+  }
+  .address-card h4 {
+    line-height: 1;
+  }
+  .world-map-section {
+    flex-direction: column;
+    justify-content: space-evenly !important;
+  }
+  .address-card:first-of-type {
+    margin-right: 0 !important;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .team-members-tabs .card-column {
+    flex: 40% 1;
+    max-width: 40%;
+}
+}
+@media screen and (max-width: 450px) {
+  .team-members-tabs {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .ant-tabs-tab {
+    margin-bottom: 0 !important;
+  }
+  .ant-tabs-nav-wrap {
+    margin-bottom: 2rem !important;
+  }
+  .about-team-section {
+    flex-direction: column !important;
+  }
+  .about-team-section .row {
+    padding-right: 0 !important;
+  }
+  .address-card {
+    width: auto !important;
+  }
+  .about-page-container h3 {
+    line-height: 1.2;
+  }
 }

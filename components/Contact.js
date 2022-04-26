@@ -10,7 +10,7 @@ const Contact = () => {
         If you have project requirements or you feel like knowing Codnify, just
         the fill the form and we are just a click away.
       </p>
-      <div>
+      <div className="input-field-row">
         <Row>
           <Col>
             <TextField
@@ -19,6 +19,7 @@ const Contact = () => {
               label="Full Name"
               type="text"
               variant="standard"
+              className="input-text-field"
             />
           </Col>
           <Col>
@@ -28,6 +29,7 @@ const Contact = () => {
               type="text"
               label="Phone Number"
               variant="standard"
+              className="input-text-field"
             />
           </Col>
         </Row>
@@ -40,6 +42,7 @@ const Contact = () => {
               label="Email"
               type="email"
               variant="standard"
+              className="input-text-field"
             />
           </Col>
           <Col>
@@ -49,6 +52,7 @@ const Contact = () => {
               label="Company"
               type="text"
               variant="standard"
+              className="input-text-field"
             />
           </Col>
         </Row>

@@ -28,7 +28,7 @@ export default function Services() {
         <link rel="icon" href="/images/logo.png" />
       </Head>
 
-      <div className={styles.servicesAboveFold} style={aboveFoldStyling}>
+      <div className="servicesAboveFold" style={aboveFoldStyling}>
         <header className="about-header">
           <NavigationBar />
         </header>
