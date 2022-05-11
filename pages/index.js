@@ -67,8 +67,6 @@ export default function Home() {
                   <Image
                     src='/images/phone-on-logo.png'
                     alt='iPhone'
-                    // layout='fill'
-                    // objectFit='contain'
                     height={500}
                     width={330.47}
                   />
@@ -77,14 +75,17 @@ export default function Home() {
             </Col>
           </Row>
 
-          <div className='down-arrow-icon'>
-            <Image
-              src='/images/down-arrow-icon.svg'
-              width={30}
-              height={15}
-              alt='Down arrow icon'
-            />
-          </div>
+          <a href='#scroll-down'>
+            <div className='down-arrow-icon'>
+              <Image
+                src='/images/down-arrow-icon.svg'
+                width={30}
+                height={15}
+                alt='Down arrow icon'
+              />
+            </div>
+          </a>
+
           <div className='partners'>
             <h2>Partners</h2>
             <div>
@@ -94,7 +95,7 @@ export default function Home() {
         </Container>
       </div>
 
-      <main className={styles.main}>
+      <main className={styles.main} id='scroll-down'>
         <Container>
           <Row className='about-section'>
             <About />

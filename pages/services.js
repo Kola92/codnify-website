@@ -29,12 +29,12 @@ export default function Services() {
       </Head>
 
       <div className="servicesAboveFold" style={aboveFoldStyling}>
-        <header className="about-header">
+        <header className="services-header">
           <NavigationBar />
         </header>
         <Container>
           <Row>
-            <Col className="about-copy-text">
+            <Col className="services-copy-text">
               <h1>Our Services</h1>
             </Col>
           </Row>

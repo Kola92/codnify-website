@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Script from 'next/script'
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -19,6 +18,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content={Component.description} />
         <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+       
       </Head>
       
       <Component {...pageProps} />;

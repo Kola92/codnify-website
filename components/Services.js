@@ -16,7 +16,6 @@ const Services = () => {
   return (
     <>
       <Row>
-        
         <Col>
           {services.map((service) => (
             <div key={service.id} className='services-list'>
@@ -27,7 +26,7 @@ const Services = () => {
             </div>
           ))}
         </Col>
-        <Col>
+        <Col className='rounded-services'>
           <Image
             src='/images/services/rounded-services.png'
             height={444}
