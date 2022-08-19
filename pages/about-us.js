@@ -1,18 +1,17 @@
-import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/About.module.css";
-import 'antd/dist/antd.css';
+import "antd/dist/antd.css";
 
 import { Container, Row, Col } from "react-bootstrap";
 import { Tabs, Card } from "antd";
 import Avatar from "@mui/material/Avatar";
 import Icon, { UserOutlined } from "@ant-design/icons";
 
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { teamDevelopersCard, teamFoundersCard } from "../TeamMembersData";
 import { DesignersSvg, DeveloperSvg, MarketingSvg } from "../CustomSvg";
+import NavigationBarWithWhiteLogo from "../components/NavbarWithWhiteLogo";
 
 const { TabPane } = Tabs;
 
@@ -26,13 +25,12 @@ const MarketingIcon = (props) => <Icon component={MarketingSvg} {...props} />;
 export default function AboutUs() {
   const aboveFoldStyling = {
     backgroundImage:
-      "url('/images/about-us/aboutus-abovefold-image/aboutus-abovefold-image.png')",
-    borderRadius: "0px 0px 0px 246.5px",
+      "url('/images/wavy-hero.png'), url('/images/about-us/aboutus-abovefold-image.png')",
     width: "100%",
     height: "100%",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
+    backgroundPosition: "center, right bottom",
   };
 
   const worldMapStyling = {
@@ -45,18 +43,18 @@ export default function AboutUs() {
   };
 
   return (
-    <div style={{height:'100vh'}} className={styles.container}>
+    <div style={{ height: "100vh" }} className={styles.container}>
       <Head>
-        <link rel="icon" href="/images/logo.png" />
+        <link rel='icon' href='/images/logo.png' />
       </Head>
 
-      <div className="aboutUsAboveFold" style={aboveFoldStyling}>
-        <header className="about-header">
-          <Navbar />
+      <div className='aboutUsAboveFold' style={aboveFoldStyling}>
+        <header className='about-header'>
+          <NavigationBarWithWhiteLogo />
         </header>
         <Container>
           <Row>
-            <Col className="about-copy-text">
+            <Col className='about-copy-text'>
               <h1>About Us</h1>
             </Col>
           </Row>
@@ -65,9 +63,9 @@ export default function AboutUs() {
 
       <main className={styles.main}>
         <Container>
-          <Row as="section" className="about-page-container">
+          <Row as='section' className='about-page-container'>
             <h3>Building An Open Digital Economy</h3>
-            <p className="about-copy">
+            <p className='about-copy'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi, dis
               nunc sit pretium ornare vitae. Id ipsum sed semper sit nulla
               consequat, purus blandit. Turpis viverra eget aliquet sed non
@@ -91,7 +89,7 @@ export default function AboutUs() {
             </p>
           </Row>
 
-          <Row as="section" className="about-team-section">
+          <Row as='section' className='about-team-section'>
             <h3>Team Members</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id
@@ -102,9 +100,9 @@ export default function AboutUs() {
             </p>
             <Row>
               <Tabs
-                defaultActiveKey="1"
-                tabPosition="left"
-                className="team-members-tabs"
+                defaultActiveKey='1'
+                tabPosition='left'
+                className='team-members-tabs'
               >
                 <TabPane
                   tab={
@@ -113,16 +111,16 @@ export default function AboutUs() {
                       Founders
                     </span>
                   }
-                  key="1"
+                  key='1'
                 >
-                  <div className="row">
+                  <div className='row'>
                     {teamFoundersCard.map((card) => (
-                      <Card key={card.id} className="card-column">
+                      <Card key={card.id} className='card-column'>
                         <Avatar
                           style={{ width: 140, height: 140 }}
                           src={card.img}
                         />
-                        <div className="founder-details">
+                        <div className='founder-details'>
                           <h4>{card.memberRole}</h4>
                           <h5>{card.memberName}</h5>
                         </div>
@@ -138,16 +136,16 @@ export default function AboutUs() {
                       Developers
                     </span>
                   }
-                  key="2"
+                  key='2'
                 >
-                  <div className="row">
+                  <div className='row'>
                     {teamDevelopersCard.map((card) => (
-                      <Card key={card.id} className="card-column">
+                      <Card key={card.id} className='card-column'>
                         <Avatar
                           style={{ width: 140, height: 140 }}
                           src={card.img}
                         />
-                        <div className="founder-details">
+                        <div className='founder-details'>
                           <h4>{card.memberRole}</h4>
                           <h5>{card.memberName}</h5>
                         </div>
@@ -163,7 +161,7 @@ export default function AboutUs() {
                       Designers
                     </span>
                   }
-                  key="3"
+                  key='3'
                 >
                   Designers
                 </TabPane>
@@ -175,7 +173,7 @@ export default function AboutUs() {
                       Marketers
                     </span>
                   }
-                  key="4"
+                  key='4'
                 >
                   Marketers
                 </TabPane>
@@ -183,7 +181,7 @@ export default function AboutUs() {
             </Row>
           </Row>
 
-          <Row as="section" className="about-location-section">
+          <Row as='section' className='about-location-section'>
             <h3>Our Locations</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id
@@ -192,10 +190,10 @@ export default function AboutUs() {
               in volutpat nisl est, nunc, nunc arcu dignissim. Eu, sed
               sollicitudin lorem ante purus in.
             </p>
-            <div className="world-map-section" style={worldMapStyling}>
-              <div className="address-card">
+            <div className='world-map-section' style={worldMapStyling}>
+              <div className='address-card'>
                 <Image
-                  src="/images/about-us/flag-for-nigeria.svg"
+                  src='/images/about-us/flag-for-nigeria.svg'
                   width={94}
                   height={94}
                 />
@@ -204,9 +202,9 @@ export default function AboutUs() {
                   52, Street, Road, City, Federal Capital Territory, Nigeria.
                 </p>
               </div>
-              <div className="address-card">
+              <div className='address-card'>
                 <Image
-                  src="/images/about-us/flag-for-united-states.svg"
+                  src='/images/about-us/flag-for-united-states.svg'
                   width={94}
                   height={94}
                 />
@@ -218,7 +216,7 @@ export default function AboutUs() {
         </Container>
       </main>
 
-      <div className="footer-container">
+      <div className='footer-container'>
         <Container>
           <Footer />
         </Container>

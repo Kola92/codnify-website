@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Navbar, Nav, Container } from "react-bootstrap";
@@ -34,7 +33,10 @@ const NavigationBar = () => {
             <Link href="/projects">
               <a className="nav-link">Projects</a>
             </Link>
-            <Link href="contact">
+            <Link href="/blog/">
+              <a className="nav-link">Blog</a>
+            </Link>
+            <Link href="/contact">
               <a className="nav-link contact-link">Contact Us</a>
             </Link>
           </Nav>

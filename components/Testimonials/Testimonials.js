@@ -61,7 +61,7 @@ const testimonials = [
     id: 1,
     picture: "/images/testimonials/john.jpg",
     name: "John Fowler",
-    role: "Product Manager",
+    role: "PM, Avalon Tech",
     feedbackHeading: "Super Confident",
     feedback:
       "If you want to lay the best foundation possible I'd recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer.",
@@ -71,11 +71,21 @@ const testimonials = [
     id: 2,
     picture: "/images/testimonials/tanya.jpg",
     name: "Carley Sinclair",
-    role: "Senior Software Engineer",
+    role: "CMO, Mercury",
     feedbackHeading: "Top Quality Service",
     feedback:
       "Website development is the real deal! I was amazed at the quality of website development. I wish I would have thought of it first. Website development was the best investment I ever made.",
     rating: 3.5,
+  },
+  {
+    id: 3,
+    picture: "/images/testimonials/brenda.jpg",
+    name: "Brenda Johnson",
+    role: "CTO, DevGenius",
+    feedbackHeading: "Amazing Customer Service",
+    feedback:
+      "The team at Codnify deliver quality results through a collaborative process, taking an active role in feedback cycles. They are fast, flexible, communicative.",
+    rating: 3,
   },
 ];
 
@@ -89,7 +99,7 @@ const Testimonials = () => {
     slidesToScroll: 1,
     prevArrow: <PreviousBtn />,
     nextArrow: <NextBtn />,
-    adaptiveHeight: true
+    adaptiveHeight: true,
   };
 
   return (

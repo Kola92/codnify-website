@@ -3,11 +3,31 @@ import { Row, Col } from "react-bootstrap";
 import Image from "next/image";
 
 export const services = [
-  { id: 1, text: "Mobile Development" },
-  { id: 2, text: "Web App Development" },
-  { id: 3, text: "UI/UX Design" },
-  { id: 4, text: "Quality Assurance" },
-  { id: 5, text: "Digital Marketing" },
+  {
+    id: 1,
+    source: "/images/services/computer-front-color.png",
+    serviceType: "Website Development",
+  },
+  {
+    id: 2,
+    source: "/images/services/paint-kit-front-color.png",
+    serviceType: "UI/UX Design",
+  },
+  {
+    id: 3,
+    source: "/images/services/megaphone-front-color.png",
+    serviceType: "Mobile Development",
+  },
+  {
+    id: 4,
+    source: "/images/services/megaphone-front-color.png",
+    serviceType: "Digital Marketing",
+  },
+  {
+    id: 5,
+    source: "/images/services/target-front-color.png",
+    serviceType: "Quality Assurance",
+  },
 ];
 
 const imgSource = "/images/services/triangle-points.svg";
@@ -17,22 +37,18 @@ const Services = () => {
     <>
       <Row>
         <Col>
-          {services.map((service) => (
-            <div key={service.id} className='services-list'>
-              <span>
-                <Image src={imgSource} height={25} width={25} alt='' />
-              </span>
-              <span>{service.text}</span>
-            </div>
-          ))}
-        </Col>
-        <Col className='rounded-services'>
-          <Image
-            src='/images/services/rounded-services.png'
-            height={444}
-            width={444}
-            alt='Software Development Services'
-          />
+          <div className='services-container'>
+            {services.map((service) => (
+              <div key={service.id} className='services-list'>
+                <div className="services-list__graphic">
+                  <Image src={service.source} height={100} width={100} alt='' />
+                </div>
+                <div className='services-type'>
+                  <h3>{service.serviceType}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
         </Col>
       </Row>
     </>

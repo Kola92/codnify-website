@@ -1,22 +1,21 @@
-import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-import NavigationBar from "../components/Navbar";
 import { Container, Row, Col } from "react-bootstrap";
 import Footer from "../components/Footer";
+import NavigationBarWithWhiteLogo from "../components/NavbarWithWhiteLogo";
 
 Projects.title = " Projects | Codnify";
 Projects.description = "Codnify Projects";
 
 export default function Projects() {
   const projectBannerStyling = {
-    backgroundImage: "url('/images/projects/projects-banner.png')",
-    borderRadius: "0px 0px 0px 246.5px",
+    backgroundImage:
+      "url('/images/wavy-hero.png'), url('/images/projects/projects-banner.png')",
     width: "100%",
     height: "100%",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
+    backgroundPosition: "center, right bottom",
   };
 
   return (
@@ -27,7 +26,7 @@ export default function Projects() {
 
       <div className='servicesAboveFold' style={projectBannerStyling}>
         <header className='projects-header'>
-          <NavigationBar />
+          <NavigationBarWithWhiteLogo />
         </header>
         <Container>
           <Row>

@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="footer-logo">
             <span>
               <Image
-                src="/images/codnify-logo-footer.svg"
+                src="/images/codnify-logo-white.svg"
                 alt="Footer logo"
                 width={60}
                 height={60}

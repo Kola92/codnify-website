@@ -4,7 +4,6 @@ import styles from "../styles/Home.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 
 import Navbar from "../components/Navbar";
-import Partners from "../components/Partners";
 import About from "../components/About";
 import Services from "../components/Services";
 import Projects from "../components/Projects/Projects";
@@ -85,33 +84,39 @@ export default function Home() {
               />
             </div>
           </a>
-
-          <div className='partners'>
-            <h2>Partners</h2>
-            <div>
-              <Partners />
-            </div>
-          </div>
         </Container>
       </div>
 
       <main className={styles.main} id='scroll-down'>
-        <Container>
+        <Container fluid style={{ padding: 0 }}>
           <Row className='about-section'>
-            <About />
+            <Container>
+              <About />
+            </Container>
           </Row>
           <Row className='services-section'>
-            <h3>Services</h3>
-            <Services />
+            <Container>
+              <div className='services-section-text'>
+                <h3>Our Services</h3>
+                <p>We provide wide range of digital services</p>
+              </div>
+              <Services />
+            </Container>
           </Row>
           <Row className='projects-section'>
-            <Projects />
+            <Container>
+              <Projects />
+            </Container>
           </Row>
           <Row className='testimonials-section'>
-            <Testimonials />
+            <Container>
+              <Testimonials />
+            </Container>
           </Row>
           <Row className='contact-section'>
-            <Contact />
+            <Container>
+              <Contact />
+            </Container>
           </Row>
         </Container>
       </main>

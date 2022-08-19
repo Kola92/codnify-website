@@ -42,7 +42,7 @@ const Projects = () => {
   return (
     <section>
       <h3>Projects</h3>
-
+      <p>We’ve worked on various scale projects over the years</p>
       <Row>
         <Col>
           <OwlCarousel
