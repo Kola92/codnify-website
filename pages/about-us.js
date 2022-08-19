@@ -196,6 +196,7 @@ export default function AboutUs() {
                   src='/images/about-us/flag-for-nigeria.svg'
                   width={94}
                   height={94}
+                  alt='Nigeria Flag'
                 />
                 <h4>Nigeria</h4>
                 <p>
@@ -207,6 +208,7 @@ export default function AboutUs() {
                   src='/images/about-us/flag-for-united-states.svg'
                   width={94}
                   height={94}
+                  alt='United States Flag'
                 />
                 <h4>United States</h4>
                 <p>69, Street, Road, City, Washington D.C., United States.</p>

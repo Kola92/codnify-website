@@ -42,10 +42,10 @@ export default function Projects() {
           <div className='projectsGalleryRow mt-20 sm:px-5'>
             {[1, 2, 3, 4, 5, 6, 7, 8].map((grid, index) => (
               <div key={index} className='projectsGalleryColumn mb-4'>
-                <img
+                <Image
                   className='rounded-2xl w-full'
                   src='/images/projects/projects-gallery-image.png'
-                  alt=''
+                  alt='Project Gallery Image'
                 />
                 <div className='image__overlay image__overlay--primary rounded-2xl px-9 pt-12'>
                   <div className='project-description h-full w-full'>

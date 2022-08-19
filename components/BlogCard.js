@@ -10,7 +10,7 @@ export default function BlogCard({ blog }) {
     <div className='blog-card card-column'>
       <Card>
         <div className='blog-card__image'>
-          <Image src={`https:${thumbnail.fields.file.url}`} width={450} height={300} />
+          <Image src={`https:${thumbnail.fields.file.url}`} width={450} height={300} alt={title} />
         </div>
       </Card>
       <div className='blog-card__content'>
