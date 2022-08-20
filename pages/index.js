@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Script from 'next/script';
+// import Script from 'next/script';
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { Container, Row, Col } from "react-bootstrap";
@@ -45,14 +45,9 @@ export default function Home() {
     <div>
       <Head>
         <link rel='icon' href='/images/logo.png' />
+        
       </Head>
-      {/* jQuery */}
-      <Script
-          src='https://code.jquery.com/jquery-3.6.0.min.js'
-          integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4='
-          crossOrigin='anonymous'
-          strategy="beforeInteractive"
-        ></Script>
+      
 
       <div className='above-fold'>
         <header>

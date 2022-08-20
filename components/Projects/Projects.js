@@ -8,6 +8,8 @@ import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel"), {
   ssr: false,
 });
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Projects = () => {
   const projectItems = [
@@ -45,7 +47,8 @@ const Projects = () => {
       <p>We’ve worked on various scale projects over the years</p>
       <Row>
         <Col>
-          <OwlCarousel
+          <h4>[PROJECTS CAROUSEL SECTION COMING SOON]</h4>
+          {/* <OwlCarousel
             id="project"
             className="owl-carousel owl-theme"
             {...options}
@@ -69,7 +72,7 @@ const Projects = () => {
                 </div>
               );
             })}
-          </OwlCarousel>
+          </OwlCarousel> */}
         </Col>
       </Row>
     </section>

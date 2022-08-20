@@ -407,6 +407,8 @@ header .navbar-brand a {
 }
 .projects-section p {
   font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 21px;
 }
 .shadow-effect {
   padding: 20px;
