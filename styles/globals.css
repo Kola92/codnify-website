@@ -239,32 +239,6 @@ header .navbar-brand a {
   align-items: center;
 }
 
-/* Parners */
-.partners div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.partners h2 {
-  font-family: "Poppins";
-  font-weight: 600;
-  font-size: 2rem;
-  line-height: 48px;
-
-  text-align: center;
-
-  color: #031432;
-
-  opacity: 0.8;
-  margin-bottom: 2.086rem;
-}
-/* .partners img {
-  margin-right: 2.25rem !important;
-} */
-.partners span {
-  width: -webkit-fill-available !important;
-}
-
 /* About Section */
 .aboutUsAboveFold {
   height: 500px !important;
