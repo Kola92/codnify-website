@@ -147,7 +147,7 @@ const Footer = () => {
         </Col>
       </Row>
       <Row>
-        <div className="copy-right">
+        <div className="copyright">
           <p>Copyright © Codnify {new Date().getFullYear()}</p>
         </div>
       </Row>

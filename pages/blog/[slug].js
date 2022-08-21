@@ -7,6 +7,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Footer from "../../components/Footer";
 import NavigationBarWithWhiteLogo from "../../components/NavbarWithWhiteLogo";
 import styles from "../../styles/Blog.module.css";
+import Skeleton from "../../components/Skeleton";
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -24,7 +25,7 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 }
 
@@ -51,7 +52,7 @@ const BlogDetails = ({ blog }) => {
     backgroundPosition: "center, right bottom",
   };
 
-  // console.log(blog);
+  if (!blog) return <Skeleton />;
 
   const {
     title,
@@ -64,15 +65,19 @@ const BlogDetails = ({ blog }) => {
   } = blog.fields;
 
   const contents = blogContent.content.map((item) => {
-    
-      if(item.nodeType === "heading-1" || item.nodeType === "heading-2" || item.nodeType === "heading-3" ||  item.nodeType === "heading-4" ||  item.nodeType === "heading-5" ||  item.nodeType === "heading-6") {
-       return item.content[0].value;
+    if (
+      item.nodeType === "heading-1" ||
+      item.nodeType === "heading-2" ||
+      item.nodeType === "heading-3" ||
+      item.nodeType === "heading-4" ||
+      item.nodeType === "heading-5" ||
+      item.nodeType === "heading-6"
+    ) {
+      return item.content[0].value;
     }
-  })
+  });
 
   const cleanUpContents = contents.filter((item) => item !== undefined);
-
-  console.log(cleanUpContents);
 
   return (
     <div>
